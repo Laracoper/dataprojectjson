@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jsonplaceholder получение данных по api</title>
+    <link rel="shortcut icon" href="img/icons8-открыть-папку.svg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md bg-body-tertiary fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand text-warning fs-1 fw-semibold" href="/">Label</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end w-75" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Label</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a onclick="closeOffcanvasAndNavigate(event, '#contact')" data-bs-dismiss="offcanvas"
+                                    class="nav-link" href="#contact">Kонтакты для связи</a>
+                            </li>
+                            <li class="nav-item">
+                                <a onclick="closeOffcanvasAndNavigate(event, '#usmanov')" data-bs-dismiss="offcanvas"
+                                    class="nav-link" href="#usmanov">Андрей Усманов 1С разработчик</a>
+                            </li>
+                            <li class="nav-item">
+                                <a onclick="closeOffcanvasAndNavigate(event, '#api')" data-bs-dismiss="offcanvas"
+                                    class="nav-link" href="#api">Получение данных по api</a>
+                            </li>
+                            <li class="nav-item">
+                                <a onclick="closeOffcanvasAndNavigate(event, '#git')" data-bs-dismiss="offcanvas"
+                                    class="nav-link" href="#git">Мой репозиторий github</a>
+                            </li>
+
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="container-fluid wrap margintop">
+        <section class="reliz mt-5">
+            <h2 class="my-3">Здравствуйте, меня зовут Алексей, я <a target="_blank" href="https://blog.skillfactory.ru/kto-takoj-veb-razrabotchik-i-chem-on-zanimaetsya/">web-разработчик</a> с 2019 года, мой стек технологий
+                стандартный, html,
+                css, js, php, mysql</h2>
+            <p>Делаю не сложные проэкты, постоянно развиваюсь в направлении <a href="https://skillbox.ru/media/code/fullstack-razrabotchik-kto-takoy-chto-delaet-i-skolko-zarabatyvaet/" target="_blank">fullstack</a></p>
+        </section>
+        <div class="img2 my-5">
+            <img src="img/developer-php.jpg" alt="developer">
+        </div>
+        <section class="projects">
+            <h1 class="mb-5">Проэкты которые стоит посмотреть, несложные сайты которые я делал в начале своей карьеры
+            </h1>
+            <div class="links">
+                <p>мой недавний проэкт на заказ <a class="fs-5" target="_blank" href="https://tatar-septic.ru">
+                        сайт-лендинг для фирмы по продажам септика </a>на участки и для дач и частных домов</p>
+                <p><a class="fs-5" target="_blank" href="https://addmany.netlify.app/">эта форма обратной связи
+                        </a>интегрированная с гугл таблицами</p>
+                <p id="usmanov"><a class="fs-5" target="_blank" href="https://usmanov87.netlify.app/">1с разработчик из Казани,
+                        сделал другу лендинг</a></p>
+                <p>сделал верску сайта онлайн курсов
+                        по<a class="fs-5" target="_blank" href="https://curs4.netlify.app/"> програмированию для школы lotos</a></p>
+                <p>попросили сделать<a class="fs-5" target="_blank" href="https://testlending.netlify.app/"> тестовое
+                        задание для Яндекса</a></p>
+                <p><a class="fs-5" target="_blank" href="https://itinform.netlify.app/">it-сайт, верстал с
+                        удовольствием </a> верстка, без бекенда</p>
+                <p>односекционный лендинг<a class="fs-5" target="_blank" href="https://askexperts.netlify.app/">
+                        askexperts на html и css</a></p>
+                <p>верстал макет<a class="fs-5" target="_blank" href="https://ritm.netlify.app/"> ritmstyle, сайт
+                        акватерапия</a></p>
+                <p>сделал сайт по прокату<a class="fs-5" target="_blank" href="https://endurocorp116.netlify.app/">
+                        эндуро в Казани</a></p>
+                <p><a class="fs-5" target="_blank" href="https://testyandexgo.netlify.app/">тестовое задание для
+                        яндекса</a> сделал верску для трудоустройтва в it</p>
+                <p><a class="fs-5" target="_blank" href="https://ram22.netlify.app/ ">КРИОГАЗ</a></p>
+                <p><a class="fs-5" target="_blank" href="https://medcenter21.netlify.app/">Медцентр 21</a> верстал
+                        многостраничный медицинский сайт, не все страницы доделал</p>
+                <p>пытался сделать интернет
+                        магазин<a class="fs-5" target="_blank" href="https://dropdownlist.netlify.app/ "> Womazing</a> не хватило знаний и опыта на тот момент, недоделал</p>
+                <p><a class="fs-5" target="_blank" href="https://manhatan.netlify.app/">макет manhatan</a></p>
+                <p>расчитайте
+                        расход своего автомобиля <a class="fs-5" target="_blank" href="https://autocalc.netlify.app/">Автокалькулятор</a></p>
+                <p><a class="fs-5" target="_blank" href="https://www.youtube.com/@AdrianaMix">AdrianaMix</a>
+                    канал ютуб</p>
+                <p><a class="fs-5" target="_blank" href="https://100quotes-live.netlify.app/">отлично сказано</a> канал
+                    ютуб</p>
+
+
+                <h6 class="my-4">Все сайты и лендинги находятся на бесплатном хостинге <a target="_blank"
+                        href="https://netlify.com">netlify.com</a></h6>
+            </div>
+        </section>
+        <div class="img mt-3">
+            <img src="img/teen_green.jpg" alt="img">
+        </div>
+        <section class="desc">
+            <h5 class="mt-3">нажав на кнопку придут данные по api с сайта <a target="_blank"
+                    href="https://jsonplaceholder.typicode.com/">jsonplaceholder</a></h5>
+        </section>
+        <div class="box d-flex align-items-center my-4">
+            <button id="api" class="btn btn-primary send me-1">получить данные с jsonplaceholder</button>
+            <a class="btn btn-warning inline-flex" href="/">перезагрузка</a>
+        </div>
+
+        <div class="cards d-flex flex-wrap gap-2 justify-content-center"></div>
+
+    </main>
+    <footer class="mt-3 py-5 container-fluid f-bg">
+        <p id="contact">контакты для связи <a target="_blank"
+                href="mailto:mihas56789@gmail.com">mihas56789@gmail.com</a></p>
+        <p id="git">ссылка на мой репозиторий<a target="_blank" href="https://github.com/Laracoper"> github</a></p>
+        <p>канал на ютуб с цитатами<a target="_blank" href="https://www.youtube.com/channel/UCS_Mjc-9VrpHinEa2mWwT8A">
+                отлично сказано</a></p>
+        <p><a target="_blank" href="https://www.youtube.com/watch?v=fuDLpZmkztQ">Зачем нужна война и кому, Здравый взгляд Вадим Зеланд.</a></p>
+        <p><a target="_blank" href="https://www.youtube.com/watch?v=f1QJrQcpAlY">Вадим Зеланд Вы достойны всего самого
+                лучшего, сила нашей мысли</a></p>
+
+                <p><a target="_blank" href="https://www.youtube.com/watch?v=hxuUOA3_Ruw">На выигрыш денег, Слова-заклинания на выигрыш в лотерею</a></p>
+
+                <div id="date"></div>
+    </footer>
+
+
+    <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/offcanvas.js"></script>
+    <script src="js/date.js"></script>
+</body>
+
+</html>

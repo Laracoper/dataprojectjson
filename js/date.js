@@ -1,0 +1,1 @@
+document.getElementById('date').innerHTML = ' &copy; ' + new Date().getFullYear() + ` <span class = "text-warning fs-2">Label</span>` 
