@@ -2,7 +2,7 @@
     position: relative;
 }
 
-.img2{
+.img2 {
     position: relative;
     /* height: 400px; */
 }
@@ -23,9 +23,14 @@ a {
 
 .f-bg {
     background-color: rgb(234, 234, 234);
-    
+
 }
 
 .margintop {
     margin-top: 100px;
+
+}
+
+.links {
+    scroll-margin-top: 4rem;
 }
